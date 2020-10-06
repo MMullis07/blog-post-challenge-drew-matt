@@ -1,0 +1,9 @@
+<h1><%= @blog_posts.title %></h1>
+
+<p><%= @blog_posts.content %></p>
+
+<p><%= link_to "Home", blog_posts_path %></p>
+
+<p><%= link_to "Edit Post", edit_post_path(@blog_posts) %></p>
+
+<p><%= link_to "Delete Post", delete_post_path(@blog_posts), method: :delete, data: { confirm: "Are you sure?"}%></p>
