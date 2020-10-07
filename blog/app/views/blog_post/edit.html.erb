@@ -1,6 +1,5 @@
-<h1>Edit Blog Post</h1>
-
-<%= form_with url: "/blog_posts/#{params[:id]}", method: "patch", local: true do |form| %>
+<%= form_with url: "/blog_posts/#{params[:id]}", method: "patch", local: true, :class => "box" do |form| %>
+    <h1>Edit Blog Post</h1>
     <%= form.label :title %>
     <%= form.text_field :title %>
 
